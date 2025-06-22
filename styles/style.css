@@ -1,0 +1,653 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100px;
+    background-color: #C7E0E3;
+    padding: 0 20px;
+} 
+
+.home-title{
+    color: #C14649;
+    font-size: 3.125rem;
+    margin: 0 10px;
+    font-family: "Dancing Script", cursive;
+    line-height: 1;
+}
+
+.logo{
+    display: flex;
+}
+
+.logo img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+nav ul.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+nav a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    font-size: 1rem;
+    font-weight: 600 !important;
+    padding-right: 8px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: #C14649 !important; 
+}
+
+nav a:hover {
+    color: white !important; 
+}
+
+nav a img {
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+}
+
+.whatsapp{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    z-index: 9999;
+}
+
+.whatsapp img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: transform 0.2s;
+}
+
+html, body{
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #ffc2c7;
+    display: flex;
+    flex-direction: column;
+}
+
+.fondo-fijo{
+    background-image: url(/assets/Imagenes/fondofijo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.contenido{
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: #C7E0E3;
+    color: #C14649;
+    margin-top: 40px;
+    font-size: 14px;
+    position: relative;
+}
+
+footer .redes img{
+    width: 30px;
+    margin: 0 5px;
+    transition: transform 0.3s;
+}
+
+footer .redes img:hover{
+    transform: scale(1.1);
+}
+
+
+/* Home */
+
+.frase-video{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 80px;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.texto-frase{
+    max-width: 600px;
+    flex: 1;
+}
+
+.frase-principal{
+    color: #C14649;
+    font-family: "Dancing Script", cursive;
+    font-size: 2.5em;
+    text-align: left;
+}
+
+.frase-secundaria{
+    color:#C14649;
+    font-family: "Dancing Script", cursive;
+    font-size: 1.9em;
+    text-align: left; 
+}
+
+.video video{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #C14649;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+
+/* Contacto */
+
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: sans-serif;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+form.formulario h2{
+    flex: 1 1 100%;
+    width: 100%;
+    text-align: center;
+    color: #C14649;
+    font-size: 4.375rem;
+    font-family: "Dancing Script", cursive;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+form.formulario{
+    backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    width: 90%;
+    max-width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+form.formulario label{
+    display: none;
+}
+
+form.formulario input{
+    flex: 1 1 48%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+form.formulario textarea{
+    width: 100%;
+    height: 120px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: vertical;
+}
+
+form.formulario button{
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background-color:  #C7E0E3;
+    color:#C14649;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+form.formulario button:hover{
+    background-color: #ffb3d9;
+}
+
+
+/* Nosotros */
+
+.nosotros {
+    padding: 50px 20px;
+    color: #4b2e2e;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nosotros-title {
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    color: #C14649;
+    font-size: 3.5rem;
+}
+
+.nosotros-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.nosotros-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 600px;
+    text-align: justify;
+    margin-top: 30px;
+}
+
+.nosotros-text h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.nosotros-text p {
+    margin-bottom: 20px;
+}
+
+.nosotros-content img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Sabores */
+
+
+.sabores-title{
+    text-align: center;
+    color: #C14649;
+    font-family: "Dancing Script", cursive;
+    font-size: 3.5rem;
+}
+
+.sabores{
+    text-align: center;
+    font-size: 2em;
+}
+
+.helado section{
+    margin: 30px auto;
+    max-width: 800px;
+    padding: 20px;
+    backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+}
+
+article{
+    margin: 10px 0;
+    padding: 10px;
+    border-left: 4px solid #C14649;
+    border-radius: 10px;
+}
+
+.sabores-lista p{
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.categoria{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+}
+
+
+/* Sucursal */
+
+
+.info-sucursal {
+    text-align: center;
+    color: #3b0a0a;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    backdrop-filter: blur(8px);  
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 20px;
+    max-width: 600px;
+}
+
+.info-sucursal h2 {
+    color:#C14649;
+    font-family: "Dancing Script", cursive;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.info-sucursal p {
+    font-size: 18px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.ubicacion{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+/* Catalogo */
+
+body.catalogo{
+    background-color: #ffc2c7;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.catalogo-title {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 5rem;
+    color: #a91d60;
+    margin: 30px 0 10px 0;
+}
+
+.banner{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 90px;
+    box-sizing: border-box;
+}
+
+.banner .img-fluid { 
+    min-width: 320px;
+    max-width: 1000px;
+    height: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}  
+
+.contenido-catalogo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    justify-items: center;
+}
+
+.icecream-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 220px;
+}
+
+.icecream-card img {
+    max-height: 180px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.contenido-catalogo h3{
+    font-size: 25px;
+}
+
+.contenido-catalogo .price{
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.icecream-card p{
+    flex-grow: 1;
+}
+
+.btn-carrito {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #e06183;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-carrito:hover {
+    background-color: #a91d60;
+    box-shadow: 0 8px 20px rgba(234, 108, 198, 0.7);
+    transform: translateY(-3px);
+}
+
+.btn-carrito:active {
+    transform: translateY(1px);
+    box-shadow: 0 3px 8px rgba(77, 182, 199, 0.5);
+}
+
+
+/* Carrito */
+
+.carrito-title{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    color: #a91d60;
+    margin: 30px 0 10px 0;
+}
+
+
+/* Media Queries - Responsivo */
+
+@media (max-width: 320px){
+    header{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav{
+        display: block;
+        padding: 10px 0;
+    }
+
+    nav ul.nav-menu{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .whatsapp{
+        width: 35px;
+        height: 35px;
+    }
+
+    iframe{
+        width: 90%;
+        height: 200px;
+    }
+
+    .frase-video{
+        flex-direction: column;
+        padding: 20px;
+        gap: 30px;
+    }
+
+    .video video{
+        width: 200px;
+        height: 200px;
+    }
+
+    .frase-principal, .frase-secundaria{
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    form.formulario h2{
+        font-size: 2.5rem;
+    }
+
+    .nosotros-content{
+        padding: 0 15px;
+        gap: 15px;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px){
+    header{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav{
+        display: block;
+        padding: 10px 0;
+    }
+
+    nav ul.nav-menu{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .whatsapp{
+        width: 40px;
+        height: 40px;
+    }
+
+    iframe{
+        width: 90%;
+        height: 250px;
+    }
+
+    .frase-video{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        gap: 40px;
+    }
+
+    .video video{
+        font-size: 30px;
+        width: 250px;
+        height: 250px;
+    }
+
+    .frase-principal, .frase-secundaria{
+        font-size: 2em;
+        text-align: center;
+    }
+
+    form.formulario h2{
+        font-size: 60px;
+    }
+}
+
+@media (min-width: 2570px){
+    header{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 30px 60px;
+    }
+
+    nav ul.nav-menu{
+        gap: 40px;
+        font-size: 1.2em;
+    }
+
+    .whatsapp{
+        width: 60px;
+        height: 60px;
+    }
+
+    iframe{
+        width: 1000px;
+        height: 400px;
+    }
+
+    .frase-video{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 60px;
+        gap: 80px;
+    }
+
+    .video video{
+        width: 500px;
+        height: 500px;
+    }
+
+    .frase-principal{
+        font-size: 3em;
+    }
+
+    .frase-secundaria{
+        font-size: 2em;
+    }
+
+    form.formulario h2{
+        font-size: 80px;
+    }
+
+    form.formulario input, form.formulario textarea{
+        font-size: 1.2em;
+    }
+}
