@@ -97,7 +97,7 @@ body{
 }
 
 .fondo-fijo{
-    background-image: url(/assets/Imagenes/fondofijo.jpg);
+    background-image: url(../assets/Imagenes/fondofijo.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
