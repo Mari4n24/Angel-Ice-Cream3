@@ -41,13 +41,14 @@ header .navbar .navbar-brand {
   display: flex;
   align-items: center;
   text-decoration: none;
+  gap: 10px;
 }
 header .navbar .navbar-brand img {
   height: 70px !important;
   width: 70px !important;
   border-radius: 50%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  margin-right: 50px !important;
+  margin: 0 !important;
 }
 header .navbar .navbar-brand span {
   color: #C14649;
@@ -465,9 +466,10 @@ body.catalogo {
     width: 20px !important;
     height: 20px !important;
     flex-shrink: 0;
+    margin: 0 !important;
   }
   .navbar .navbar-brand span {
-    font-size: 1rem !important;
+    font-size: 0.875rem !important;
     white-space: nowrap;
     overflow: hidden;
     line-height: 1.1;

@@ -13,12 +13,13 @@ header {
             display: flex;
             align-items: center;
             text-decoration: none;
+            gap: 10px;
             img {
                 height: 70px !important;
                 width: 70px !important;
                 border-radius: 50%;
                 box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-                margin-right: 50px !important;
+                margin: 0 !important;
             }
             span {
                 color: $rosa-principal;
