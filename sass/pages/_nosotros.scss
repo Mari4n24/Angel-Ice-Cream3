@@ -1,0 +1,49 @@
+@import "../base/variables";
+@import "../base/mixins";
+
+.nosotros{
+    padding: 50px 20px;
+    color: #4b2e2e;
+    font-family: $fuente-normal;
+
+    .nosotros-title{
+        text-align: center;
+        font-family: $fuente-cursiva;
+        color: $rosa-principal;
+        font-size: 3.5rem;
+    }
+
+    .nosotros-content{
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 40px;
+        max-width: 1200px;
+        margin: 0 auto;
+        align-items: center;
+
+        img{
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            display: block;
+        }
+    }
+
+    .nosotros-text{
+        font-size: 1.1rem;
+        line-height: 1.8;
+        max-height: 600px;
+        text-align: justify;
+        margin-top: 30px;
+
+        h2{
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        p{
+            margin-bottom: 20px;
+        }
+    }
+}

@@ -1,3 +1,11 @@
+body.fondo-fijo {
+  background-image: url(../assets/Imagenes/fondofijo.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,13 +14,19 @@
   list-style: none;
 }
 
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
 body {
-  background-color: #ffc2c7;
+  padding-top: 100px;
+  background-color: #FFC2C7;
   display: flex;
   flex-direction: column;
-  height: 100%;
 }
-body header {
+
+header {
   position: fixed;
   top: 0;
   width: 100%;
@@ -24,30 +38,31 @@ body header {
   z-index: 1000;
   background-color: #C7E0E3;
 }
-body header .logo {
+header .logo {
   display: flex;
 }
-body header .logo img {
+header .logo img {
   height: 100px;
   width: 100px;
   border-radius: 50%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-body header .home-title a {
+header .home-title a {
   color: #C14649;
   font-size: 3.125rem;
   margin: 0 10px;
   font-family: "Dancing Script", cursive;
   line-height: 1;
+  text-decoration: none;
 }
-body header nav ul.nav-menu {
+header nav ul.nav-menu {
   display: flex;
   gap: 15px;
   align-items: center;
   margin: 0;
   padding: 0;
 }
-body header nav ul.nav-menu a {
+header nav ul.nav-menu a {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1rem;
   font-weight: 600;
@@ -57,15 +72,24 @@ body header nav ul.nav-menu a {
   align-items: center;
   color: #C14649;
 }
-body header nav ul.nav-menu a img {
+header nav ul.nav-menu a img {
   width: 30px;
   height: 30px;
   border-radius: 100px;
 }
-body header nav ul.nav-menu a:hover {
+header nav ul.nav-menu a:hover {
   color: white;
 }
-body .whatsapp {
+
+.contenido {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.whatsapp {
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -73,7 +97,7 @@ body .whatsapp {
   height: 50px;
   z-index: 9999;
 }
-body .whatsapp img {
+.whatsapp img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -81,13 +105,8 @@ body .whatsapp img {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transition: transform 0.2s;
 }
-body .contenido {
-  width: 100%;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-body footer {
+
+footer {
   text-align: center;
   padding: 20px;
   background-color: #C7E0E3;
@@ -96,20 +115,337 @@ body footer {
   font-size: 14px;
   position: relative;
 }
-body footer .redes img {
+footer .redes img {
   width: 30px;
   margin: 0 5px;
   transition: transform 0.3s;
 }
-body footer .redes img:hover {
+footer .redes img:hover {
   transform: scale(1.1);
 }
-body .fondo-fijo {
-  background-image: url("../assets/Imagenes/fondofijo.jpg");
+
+.frase-video {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px 80px;
+  gap: 60px;
+}
+
+.texto-frase {
+  max-width: 600px;
+  flex: 1;
+}
+
+.frase-principal {
+  color: #C14649;
+  font-family: "Dancing Script", cursive;
+  font-size: 2.5em;
+  text-align: left;
+}
+
+.frase-secundaria {
+  color: #C14649;
+  font-family: "Dancing Script", cursive;
+  font-size: 1.9em;
+  text-align: left;
+}
+
+.video video {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #C14649;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+
+form.formulario {
+  backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+}
+form.formulario h2 {
+  flex: 1 1 100%;
+  width: 100%;
+  text-align: center;
+  color: #C14649;
+  font-size: 4.357rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+form.formulario label {
+  display: none;
+}
+form.formulario input {
+  flex: 1 1 48%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-weight: 900;
+}
+form.formulario textarea {
+  width: 100%;
+  height: 120px;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 900;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: vertical;
+}
+form.formulario button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 900;
+  background-color: #C7E0E3;
+  color: #C14649;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+form.formulario button:hover {
+  background: linear-gradient(90deg, rgb(252, 157, 168) 0%, rgb(69, 208, 230) 100%);
+}
+
+.nosotros {
+  padding: 50px 20px;
+  color: #4b2e2e;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nosotros .nosotros-title {
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  color: #C14649;
+  font-size: 3.5rem;
+}
+.nosotros .nosotros-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+}
+.nosotros .nosotros-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: block;
+}
+.nosotros .nosotros-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-height: 600px;
+  text-align: justify;
+  margin-top: 30px;
+}
+.nosotros .nosotros-text h2 {
+  text-align: center;
+  margin-top: 20px;
+}
+.nosotros .nosotros-text p {
+  margin-bottom: 20px;
+}
+
+.sabores {
+  text-align: center;
+  font-size: 2em;
+}
+.sabores-title {
+  text-align: center;
+  color: #C14649;
+  font-family: "Dancing Script", cursive;
+  font-size: 3.5rem;
+}
+.sabores-lista p {
+  margin: 0;
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.helado section {
+  margin: 30px auto;
+  max-width: 800px;
+  padding: 20px;
+  backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+article {
+  margin: 10px 0;
+  padding: 10px;
+  border-left: 4px solid #C14649;
+  border-radius: 10px;
+}
+
+.categoria {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100px;
+  width: 200px;
+  height: 200px;
+}
+
+.info-sucursal {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 10px rgba 0, 0, 0, 0.3;
+  backdrop-filter: blur(8px);
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 20px;
+  max-width: 600px;
+}
+.info-sucursal .fondo-fijo {
+  background-image: url(../assets/Imagenes/fondofijo.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+}
+.info-sucursal h2 {
+  color: #C14649;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+.info-sucursal p {
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.info-sucursal .ubicacion {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+body.catalogo {
+  background-color: #FFC2C7;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.catalogo-title {
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-size: 5rem;
+  color: #a91d60;
+  margin: 30px 0 10px 0;
+}
+
+.banner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+.banner .img-fluid {
+  display: block;
+  margin-top: 0;
+  min-width: 320px;
+  max-width: 1000px;
+  height: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contenido-catalogo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  justify-items: center;
+}
+.contenido-catalogo h3 {
+  font-size: 25px;
+}
+.contenido-catalogo .price {
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.icecream-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 220px;
+}
+.icecream-card img {
+  max-height: 180px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+.icecream-card p {
+  flex-grow: 1;
+}
+
+.btn-carrito {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #e06183;
+  text-decoration: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+.btn-carrito:hover {
+  background-color: #a91d60;
+  box-shadow: 0 8px 20px rgba(234, 108, 198, 0.7);
+  transform: translateY(-3px);
+}
+.btn-carrito:active {
+  transform: translateY(1px);
+  box-shadow: 0 3px 8px rgba(77, 182, 199, 0.5);
+}
+
+.carrito-title {
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-size: 3rem;
+  color: #a91d60;
+  margin: 30px 0 10px 0;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,39 @@
+@import "../base/variables";
+
+.info-sucursal{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 10px rgba (0,0,0,0.3);
+    backdrop-filter: blur(8px);
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 20px;
+    max-width: 600px;
+
+    .fondo-fijo{
+        background-image: url(../assets/Imagenes/fondofijo.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    h2{
+        color: $rosa-principal;
+        font-family: $fuente-normal;
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+
+    p{
+        font-size: 18px;
+        font-family: $fuente-normal;
+    }
+
+    .ubicacion{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
+

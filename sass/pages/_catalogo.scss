@@ -1,0 +1,102 @@
+@import "../base/mixins";
+@import "../base/variables";
+@import "../base/extends";
+
+body.catalogo {
+    background-color: $rosita-fondo;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.catalogo-title {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 5rem;
+    color: $color-title-cc;
+    margin: 30px 0 10px 0;
+}
+
+.banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+
+    .img-fluid {
+        display: block;
+        margin-top: 0;
+        min-width: 320px;
+        max-width: 1000px;
+        height: auto;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.contenido-catalogo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    justify-items: center;
+
+    h3 {
+        font-size: 25px;
+    }
+
+    .price {
+        font-weight: 700;
+        font-size: 25px;
+    }
+}
+
+.icecream-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 220px;
+
+    img {
+        max-height: 180px;
+        object-fit: cover;
+        margin-bottom: 10px;
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+    }
+
+    p {
+        flex-grow: 1;
+    }
+}
+
+.btn-carrito {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #e06183;
+    text-decoration: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: #a91d60;
+        box-shadow: 0 8px 20px rgba(234, 108, 198, 0.7);
+        transform: translateY(-3px);
+    }
+
+    &:active {
+        transform: translateY(1px);
+        box-shadow: 0 3px 8px rgba(77, 182, 199, 0.5);
+    }
+}

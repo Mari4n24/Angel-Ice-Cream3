@@ -1,0 +1,23 @@
+@import '../base/variables';
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: $celeste-fondo;
+    color: $rosa-principal;
+    margin-top: 40px;
+    font-size: 14px;
+    position: relative;
+
+    .redes{
+        img{
+            width: 30px;
+            margin: 0 5px;
+            transition: transform 0.3s;
+
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+}

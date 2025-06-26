@@ -1,0 +1,26 @@
+@import '../base/variables';
+@import "../base/extends";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    padding-top: 100px;
+    background-color: $rosita-fondo;
+    display: flex;
+    flex-direction: column;
+}
+
+body.fondo-fijo{
+    @extend %fondo;
+}
