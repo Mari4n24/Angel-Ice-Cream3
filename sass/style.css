@@ -68,8 +68,10 @@ header .navbar .nav-link img {
   height: 30px;
   border-radius: 100px;
 }
-header .navbar .nav-link:hover {
+header .navbar .nav-link:hover, header .navbar .nav-link:focus {
   color: white;
+  background-color: #FFC2C7;
+  padding: 0.2rem 1rem;
 }
 
 .contenido {
