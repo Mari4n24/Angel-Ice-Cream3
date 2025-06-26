@@ -4,8 +4,22 @@
     align-items: center;
 }
 
-// Variables de breakpoints
-$breakpoint-xs: 320px;
-$breakpoint-sm: 768px;
-$breakpoint-xl: 2570px;
+//mixins media
 
+@mixin respond-xs{
+    @media (max-width: $breakpoint-xs){
+        @content;
+    }
+}
+
+@mixin respond-sm{
+    @media (max-width: $breakpoint-sm){
+        @content;
+    }
+}
+
+@mixin respond-xl{
+    @media (min-width: $breakpoint-xl){
+        @content;
+    }
+}
