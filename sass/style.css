@@ -31,53 +31,44 @@ header {
   top: 0;
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 100px;
-  padding: 0 20px;
   z-index: 1000;
-  background-color: #C7E0E3;
 }
-header .logo {
+header .navbar {
+  background-color: #C7E0E3 !important;
+  min-height: 100px;
+}
+header .navbar .navbar-brand {
   display: flex;
-}
-header .logo img {
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-header .home-title a {
-  color: #C14649;
-  font-size: 3.125rem;
-  margin: 0 10px;
-  font-family: "Dancing Script", cursive;
-  line-height: 1;
+  align-items: center;
   text-decoration: none;
 }
-header nav ul.nav-menu {
-  display: flex;
-  gap: 15px;
-  align-items: center;
-  margin: 0;
-  padding: 0;
+header .navbar .navbar-brand img {
+  height: 70px !important;
+  width: 70px !important;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-right: 50px !important;
 }
-header nav ul.nav-menu a {
+header .navbar .navbar-brand span {
+  color: #C14649;
+  font-size: 3.125rem;
+  font-family: "Dancing Script", cursive;
+  line-height: 1;
+}
+header .navbar .nav-link {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1rem;
   font-weight: 600;
-  padding-right: 8px;
-  line-height: 1;
   display: flex;
   align-items: center;
   color: #C14649;
 }
-header nav ul.nav-menu a img {
+header .navbar .nav-link img {
   width: 30px;
   height: 30px;
   border-radius: 100px;
 }
-header nav ul.nav-menu a:hover {
+header .navbar .nav-link:hover {
   color: white;
 }
 

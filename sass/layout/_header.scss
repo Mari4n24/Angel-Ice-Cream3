@@ -1,65 +1,47 @@
 @import '../base/variables';
 
-header{
+header {
     position: fixed;
     top: 0;
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 100px;
-    padding: 0 20px;
     z-index: 1000;
-    background-color: $celeste-fondo;
-
-    .logo{
-        display: flex;
-
-        img{
-            height: 100px;
-            width: 100px;
-            border-radius: 50%;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        }
-    }
-
-    .home-title a{
-        color: $rosa-principal;
-        font-size: 3.125rem;
-        margin: 0 10px;
-        font-family: $fuente-cursiva;
-        line-height: 1;
-        text-decoration: none;
-    }
-
-    nav{
-        ul.nav-menu{
+    .navbar {
+        background-color: $celeste-fondo !important;
+        min-height: 100px;
+        .navbar-brand {
             display: flex;
-            gap: 15px;
             align-items: center;
-            margin: 0;
-            padding: 0;
-
-            a{
-                font-family: $fuente-normal;
-                font-size: 1rem;
-                font-weight: 600;
-                padding-right: 8px;
-                line-height: 1;
-                display: flex;
-                align-items: center;
-                color: $rosa-principal;
-
-                img{
-                    width: 30px;
-                    height: 30px;
-                    border-radius: 100px;
-                }
-
-                &:hover{
-                    color: white;
-                }
+            text-decoration: none;
+            img {
+                height: 70px !important;
+                width: 70px !important;
+                border-radius: 50%;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+                margin-right: 50px !important;
             }
+            span {
+                color: $rosa-principal;
+                font-size: 3.125rem;
+                font-family: $fuente-cursiva;
+                line-height: 1;
+            }
+        }
+        .nav-link {
+            font-family: $fuente-normal;
+            font-size: 1rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            color: $rosa-principal;
+            img {
+                width: 30px;
+                height: 30px;
+                border-radius: 100px;
+            }
+            &:hover {
+                color: white;
+            }   
         }
     }
 }

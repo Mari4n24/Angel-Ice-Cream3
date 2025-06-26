@@ -19,28 +19,57 @@
 <body class="catalogo">
     <div class="contenido">
         <header>
-            <div class="logo">    
-                <img src="../assets/Imagenes/logo.jpg" alt="Logo de Angel Ice-Cream">
-            </div>
-            <div class="titulo">
-                <h1 class="home-title">
-                    <a href="../index.html">Angel Ice-Cream</a>
-                </h1>
-            </div>
-            <nav>
-                <ul class="nav-menu">
-                    <li><a href="../index.html" class="nav-link">Home</a></li>
-                    <li><a href="./contacto.html" class="nav-link">Contacto</a></li>
-                    <li><a href="./nosotros.html" class="nav-link">Nosotros</a></li>
-                    <li><a href="./sabores.html" class="nav-link">Sabores</a></li>
-                    <li><a href="./sucursal.html" class="nav-link">Sucursal</a></li>
-                    <li><a href="./catalogo.html" class="nav-link">Catálogo</a></li>
-                    <li>
-                        <a href="./carrito.html">
-                            <img src="../assets/Imagenes/carrito-de-helados.png" alt="Carrito de compras">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+                <div class="container-fluid">
+                    <!-- Logo + Título -->
+                    <div class="d-flex align-items-center">
+                        <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                            <img src="../assets/Imagenes/logo.jpg" alt="Logo de Angel Ice-Cream" style="height: 40px; margin-right: 10px;">
+                            <span class="fw-bold">Angel Ice-Cream</span>
                         </a>
-                    </li>
-                </ul>
+                    </div>
+
+                    <!-- Botón Hamburguesa -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- Menú Offcanvas -->
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="navbarOffcanvasLgLabel">Menú</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+                        </div>
+
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a href="../index.html" class="nav-link">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./contacto.html" class="nav-link">Contacto</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./nosotros.html" class="nav-link">Nosotros</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./sabores.html" class="nav-link">Sabores</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./sucursal.html" class="nav-link">Sucursal</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./catalogo.html" class="nav-link">Catálogo</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./carrito.html" class="nav-link">
+                                        <img src="../assets/Imagenes/carrito-de-helados.png" alt="Carrito de compras">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </nav>
         </header>
         <section class="banner">
