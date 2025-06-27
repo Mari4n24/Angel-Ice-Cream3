@@ -48,7 +48,7 @@ header .navbar .navbar-brand img {
   width: 70px !important;
   border-radius: 50%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  margin: 0 !important;
+  margin-right: 0 !important;
 }
 header .navbar .navbar-brand span {
   color: #C14649;
@@ -253,6 +253,7 @@ form.formulario button:hover {
   display: block;
 }
 .nosotros .nosotros-text {
+  width: 90%;
   font-size: 1.1rem;
   line-height: 1.8;
   max-height: 600px;
@@ -262,6 +263,7 @@ form.formulario button:hover {
 .nosotros .nosotros-text h2 {
   text-align: center;
   margin-top: 20px;
+  font-weight: bold;
 }
 .nosotros .nosotros-text p {
   margin-bottom: 20px;
@@ -310,14 +312,17 @@ article {
 }
 
 .info-sucursal {
+  padding-top: 100px;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.3);
-  box-shadow: 0 0 10px rgba 0, 0, 0, 0.3;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(8px);
   padding: 20px;
-  margin: 20px auto;
+  margin: 50px auto;
   border-radius: 20px;
+  width: 90%;
   max-width: 600px;
+  gap: 10px;
 }
 .info-sucursal .fondo-fijo {
   background-image: url(../assets/Imagenes/fondofijo.jpg);
@@ -440,7 +445,7 @@ body.catalogo {
 
 @media (max-width: 400px) {
   body {
-    padding-top: 130px !important;
+    padding-top: 100px !important;
   }
   header {
     position: fixed;
@@ -459,18 +464,18 @@ body.catalogo {
   .navbar .navbar-brand {
     display: flex;
     align-items: center;
-    gap: 6px;
-    max-width: 70%;
+    gap: 5px !important;
+    max-width: 100%;
   }
   .navbar .navbar-brand img {
     width: 20px !important;
     height: 20px !important;
     flex-shrink: 0;
-    margin: 0 !important;
+    margin-right: 0 !important;
   }
   .navbar .navbar-brand span {
-    font-size: 0.875rem !important;
-    white-space: nowrap;
+    font-size: 0.55rem !important;
+    white-space: normal;
     overflow: hidden;
     line-height: 1.1;
     text-overflow: ellipsis;
@@ -484,6 +489,10 @@ body.catalogo {
     padding: 2px;
     margin-left: 4px;
     flex-shrink: 0;
+  }
+  .navbar .offcanvas {
+    background-color: #C7E0E3;
+    font-weight: bold;
   }
   .whatsapp {
     width: 50px;
@@ -510,14 +519,33 @@ body.catalogo {
     font-size: 1.5rem;
   }
   .nosotros-content {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 0 5px;
-    gap: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
     width: 100%;
-    max-width: 100%;
-    overflow: hidden;
     box-sizing: border-box;
+    overflow: visible;
+  }
+  .nosotros-content img {
+    max-width: 90vw;
+    height: auto;
+    display: block;
+  }
+  .nosotros-content h2, .nosotros-content h3 {
+    word-break: break-word;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .nosotros-content p {
+    word-break: break-word;
+    text-align: justify;
+    font-size: 1rem;
+  }
+  .info-sucursal {
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 @media (max-width: 768px) {
@@ -533,12 +561,19 @@ body.catalogo {
     height: 32px !important;
   }
   .navbar .navbar-brand span {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
     font-size: 1.5rem !important;
     max-width: 220px;
   }
   .navbar .navbar-toggler {
     font-size: 1.4rem;
     padding: 6px;
+  }
+  .navbar .offcanvas {
+    background-color: #C7E0E3;
+    font-weight: bold;
   }
   .whatsapp {
     width: 50px;
