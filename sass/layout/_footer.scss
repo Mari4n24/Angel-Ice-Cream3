@@ -1,6 +1,6 @@
 @import '../base/variables';
 
-footer {
+footer{
     text-align: center;
     padding: 20px;
     background-color: $celeste-fondo;
@@ -8,8 +8,12 @@ footer {
     margin-top: 40px;
     font-size: 14px;
     position: relative;
-
     .redes{
+        a {
+            outline: none;
+            border: none;
+            text-decoration: none;
+        }    
         img{
             width: 30px;
             margin: 0 5px;

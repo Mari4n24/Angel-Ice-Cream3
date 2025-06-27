@@ -10,7 +10,6 @@
 }
 
 //mixins media
-
 @mixin respond-xs{
     @media (max-width: $breakpoint-xs){
         @content;

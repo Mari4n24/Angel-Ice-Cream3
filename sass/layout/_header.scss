@@ -1,47 +1,47 @@
 @import '../base/variables';
 
-header {
+header{
     position: fixed;
     top: 0;
     width: 100%;
     display: flex;
     z-index: 1000;
-    .navbar {
+    .navbar{
         background-color: $celeste-fondo !important;
         min-height: 100px;
-        .navbar-brand {
+        .navbar-brand{
             display: flex;
             align-items: center;
             text-decoration: none;
             gap: 10px;
-            img {
+            img{
                 height: 70px !important;
                 width: 70px !important;
                 border-radius: 50%;
                 box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
                 margin-right: 0 !important;
             }
-            span {
+            span{
                 color: $rosa-principal;
                 font-size: 3.125rem;
                 font-family: $fuente-cursiva;
                 line-height: 1;
             }
         }
-        .nav-link {
+        .nav-link{
             font-family: $fuente-normal;
             font-size: 1rem;
             font-weight: 600;
             display: flex;
             align-items: center;
             color: $rosa-principal;
-            img {
+            img{
                 width: 30px;
                 height: 30px;
                 border-radius: 100px;
             }
             &:hover,
-            &:focus {
+            &:focus{
                 color: white;
                 background-color: $rosita-fondo;           
                 padding: 0.2rem 1rem;

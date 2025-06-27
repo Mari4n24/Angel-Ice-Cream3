@@ -12,7 +12,6 @@
     width: 90%;
     max-width: 600px;
     gap: 10px;
-
     .fondo-fijo{
         background-image: url(../assets/Imagenes/fondofijo.jpg);
         background-position: center center;
@@ -20,19 +19,16 @@
         background-attachment: fixed;
         background-size: cover;
     }
-
     h2{
         color: $rosa-principal;
         font-family: $fuente-normal;
         font-size: 36px;
         margin-bottom: 10px;
     }
-
     p{
         font-size: 18px;
         font-family: $fuente-normal;
     }
-
     .ubicacion{
         display: flex;
         justify-content: center;

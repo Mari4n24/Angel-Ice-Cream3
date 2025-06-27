@@ -8,19 +8,16 @@
     text-decoration: none;
     list-style: none;
 }
-
-html, body {
+html, body{
     height: 100%;
     overflow-x: hidden;
 }
-
-body {
+body{
     padding-top: 100px;
     background-color: $rosita-fondo;
     display: flex;
     flex-direction: column;
 }
-
 body.fondo-fijo{
     @extend %fondo;
 }
