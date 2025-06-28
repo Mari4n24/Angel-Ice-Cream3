@@ -274,38 +274,20 @@ form.formulario button:hover {
   display: block;
 }
 .nosotros .nosotros-text {
-  position: relative;
-  overflow: hidden;
   width: 90%;
   font-size: 1.1rem;
   line-height: 1.8;
   max-height: 600px;
   text-align: justify;
   margin-top: 30px;
-  color: transparent;
-  transition: color 0.5s ease;
 }
-.nosotros .nosotros-text::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(circle, rgb(238, 174, 202) 0%, rgb(148, 187, 233) 100%);
-  z-index: 1;
-  transition: transform 0.6s ease;
-  transform: translateY(0);
+.nosotros .nosotros-text h2 {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
 }
-.nosotros .nosotros-text:hover {
-  color: #4b2e2e;
-}
-.nosotros .nosotros-text:hover::before {
-  transform: translateY(-100%);
-}
-.nosotros .nosotros-text h2, .nosotros .nosotros-text p {
-  position: relative;
-  z-index: 2;
+.nosotros .nosotros-text p {
+  margin-bottom: 20px;
 }
 
 .sabores {
