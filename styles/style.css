@@ -15,7 +15,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
 body.fondo-fijo {
-  background-image: url(../assets/Imagenes/fondofijo.jpg);
+  background-image: url(../assets/Imagenes/descarga4.jpeg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -37,7 +37,7 @@ html, body {
 
 body {
   padding-top: 100px;
-  background-color: #FFC2C7;
+  background-color: white;
   display: flex;
   flex-direction: column;
 }
@@ -88,7 +88,6 @@ header .navbar .nav-link img {
 header .navbar .nav-link:hover, header .navbar .nav-link:focus {
   color: white;
   background-color: #FFC2C7;
-  padding: 0.2rem 1rem;
 }
 
 .contenido {
@@ -312,7 +311,7 @@ form.formulario button:hover {
   text-align: center;
   color: #C14649;
   font-family: "Dancing Script", cursive;
-  font-size: 3.5rem;
+  font-size: 4.5rem;
 }
 .sabores-lista p {
   margin: 0;
@@ -574,7 +573,7 @@ body.catalogo {
   }
   .nosotros-content p {
     word-break: break-word;
-    text-align: justify;
+    text-align: center;
     font-size: 1rem;
   }
   .info-sucursal {
