@@ -574,7 +574,7 @@ body.catalogo {
   }
   .nosotros-content p {
     word-break: break-word;
-    text-align: center;
+    text-align: justify;
     font-size: 1rem;
   }
   .info-sucursal {
