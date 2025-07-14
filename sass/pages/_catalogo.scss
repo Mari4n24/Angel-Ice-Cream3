@@ -26,6 +26,21 @@ body.catalogo{
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
 }
+.carousel-control-prev-icon {
+    background-image: url(../assets/Imagenes/izquierda.png) !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+}
+
+.carousel-control-next-icon {
+    background-image: url(../assets/Imagenes/derecha.png) !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+}
 .contenido-catalogo{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
