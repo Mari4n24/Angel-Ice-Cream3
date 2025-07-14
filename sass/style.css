@@ -139,6 +139,14 @@ footer .redes img:hover {
   transform: scale(1.1);
 }
 
+.home {
+  background-image: url(../assets/Imagenes/fondo-home.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 .frase-video {
   display: flex;
   justify-content: space-between;
@@ -146,6 +154,10 @@ footer .redes img:hover {
   flex-wrap: wrap;
   padding: 40px 80px;
   gap: 60px;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .texto-frase {
@@ -154,22 +166,24 @@ footer .redes img:hover {
 }
 
 .frase-principal {
-  color: #C14649;
+  color: #4f1a1b;
   font-family: "Dancing Script", cursive;
-  font-size: 2.5em;
-  text-align: left;
+  font-size: 3em;
+  font-weight: 700;
+  text-align: center;
 }
 
 .frase-secundaria {
-  color: #C14649;
+  color: #4f1a1b;
   font-family: "Dancing Script", cursive;
-  font-size: 1.9em;
-  text-align: left;
+  font-size: 2.5em;
+  font-weight: 700;
+  text-align: center;
 }
 
 .video video {
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   border-radius: 50%;
   object-fit: cover;
   border: 4px solid #C14649;
