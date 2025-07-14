@@ -19,6 +19,9 @@ body.catalogo{
 .banner{
     width: 100%;
     box-sizing: border-box;
+    #carouselMobile{
+        display: flex;
+    }
     .img-fluid{
         width: 100%;
         display: block;
@@ -26,15 +29,14 @@ body.catalogo{
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
 }
-.carousel-control-prev-icon {
+.carousel-control-prev-icon{
     background-image: url(../assets/Imagenes/izquierda.png) !important;
     background-size: contain;
     background-repeat: no-repeat;
     width: 60px;
     height: 60px;
 }
-
-.carousel-control-next-icon {
+.carousel-control-next-icon{
     background-image: url(../assets/Imagenes/derecha.png) !important;
     background-size: contain;
     background-repeat: no-repeat;

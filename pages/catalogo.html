@@ -67,28 +67,52 @@
             </nav>
         </header>
         <section class="banner">
-            <div id="carouselExample" class="carousel slide">
+            <!-- Carrusel para escritorio -->
+            <div id="carouselDesktop" class="carousel slide d-none d-md-block">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="../assets/Imagenes/carrusel1.jpg" class="d-block w-100 img-fluid" alt="Imagen de carrusel 1" title="Elige el que te hace volar">
                     </div>
-                    <div class="carousel-item">
-                        <img src="../assets/Imagenes/carrusel2.jpg" class="d-block w-100 img-fluid" alt="Imagen de carrusel 2" title="¡Oferta duo! El doble de sabor para compartir">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../assets/Imagenes/carrusel3.jpg" class="d-block w-100 img-fluid" alt="Imagen de carrusel 3" title="Promo válida toda la semana, no te la pierdas">
-                    </div>
+                <div class="carousel-item">
+                    <img src="../assets/Imagenes/carrusel2.jpg" class="d-block w-100 img-fluid" alt="Imagen de carrusel 2" title="¡Oferta duo! El doble de sabor para compartir">
                 </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <div class="carousel-item">
+                    <img src="../assets/Imagenes/carrusel3.jpg" class="d-block w-100 img-fluid" alt="Imagen de carrusel 3" title="Promo válida toda la semana, no te la pierdas">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselDesktop" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselDesktop" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-        </section>
+        <!-- Carrusel para móviles -->
+        <div id="carouselMobile" class="carousel slide d-block d-md-none">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../assets/Imagenes/carrusel-responsive1.jpg" class="d-block w-100 img-fluid" alt="Imagen de carrusel 1" title="Elige el que te hace volar">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/Imagenes/carrusel-responsive2.jpg" class="d-block w-100 img-fluid" alt="Imagen de carrusel 2" title="¡Oferta duo! El doble de sabor para compartir">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/Imagenes/carrusel-responsive3.jpg" class="d-block w-100 img-fluid" alt="Imagen de carrusel 3" title="Promo válida toda la semana, no te la pierdas">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselMobile" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselMobile" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
         <main>
             <h2 class="catalogo-title">Catálogo</h2>
             <section class="contenido-catalogo">
