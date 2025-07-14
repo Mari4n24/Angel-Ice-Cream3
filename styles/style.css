@@ -139,11 +139,9 @@ footer .redes img:hover {
 }
 
 .home {
-  background-image: url(../assets/Imagenes/fondo-home.jpeg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background: linear-gradient(125deg, rgba(0, 0, 0, 0.5) 10%), url(../assets/Imagenes/fondo-home.jpeg) no-repeat center center fixed;
   background-size: cover;
+  z-index: 1;
 }
 
 .frase-video {
@@ -165,7 +163,7 @@ footer .redes img:hover {
 }
 
 .frase-principal {
-  color: #4f1a1b;
+  color: white;
   font-family: "Dancing Script", cursive;
   font-size: 3em;
   font-weight: 700;
@@ -173,7 +171,7 @@ footer .redes img:hover {
 }
 
 .frase-secundaria {
-  color: #4f1a1b;
+  color: white;
   font-family: "Dancing Script", cursive;
   font-size: 2.5em;
   font-weight: 700;
