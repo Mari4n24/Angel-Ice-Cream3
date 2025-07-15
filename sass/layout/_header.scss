@@ -1,4 +1,5 @@
 @import '../base/variables';
+@import '../base/extends';
 
 header{
     position: fixed;
@@ -7,8 +8,7 @@ header{
     display: flex;
     z-index: 1000;
     .navbar{
-        background-color: $celeste-fondo !important;
-        min-height: 100px;
+        @extend %fondo;
         .navbar-brand{
             display: flex;
             align-items: center;
