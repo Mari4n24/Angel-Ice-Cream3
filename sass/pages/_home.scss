@@ -2,10 +2,7 @@
 @import "../base/mixins";
 
 .home{
-    background: 
-        linear-gradient(125deg, 
-            rgba(0, 0, 0, 0.5) 10%),
-        url(../assets/Imagenes/fondo-home.jpeg) no-repeat center center fixed;
+    background: url(../assets/Imagenes/fondofijo.jpeg) no-repeat center center fixed;
     background-size: cover;
     z-index: 1;
 }
@@ -24,14 +21,14 @@
     flex: 1;
 }
 .frase-principal{
-    color: white;
+    color: $rosa-principal;
     font-family: $fuente-cursiva;
     font-size: 3em;
     font-weight: 700;
     text-align: center;
 }
 .frase-secundaria{
-    color: white;
+    color: $rosa-principal;
     font-family: $fuente-cursiva;
     font-size: 2.5em;
     font-weight: 700;
@@ -45,3 +42,48 @@
     border: 4px solid $rosa-principal;
     box-shadow: 0 4px 10px rgb(0,0,0,0.2);
 }
+.nuevo-helado{
+    padding: 60px 20px;
+    text-align: center;
+    .titulo-nuevo{
+        font-size: 5.5em;
+        font-family: $fuente-cursiva;
+        color: $rosa-principal;
+        margin-bottom: 10px;
+    }
+    .descripcion-nuevo{
+        font-size: 3em;
+        color: $rosa-principal;
+        margin-bottom: 40px;
+        font-family: $fuente-cursiva;
+    }
+    .nuevo-contenedor{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+        .nuevo-card {
+            background-color: #fff;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 260px;
+            img {
+                width: 100%;
+                height: 380px;
+                object-fit: cover;
+                border-radius: 15px;
+            }
+            .nombre-milshake{
+                font-size: 1.5em;
+                font-weight: 600;
+                font-family: $fuente-normal;
+                color: $rosa-principal;
+                margin-top: 15px;
+            }
+        }
+    }
+}    
