@@ -618,6 +618,33 @@ body.catalogo {
     font-size: 1.1em;
     text-align: center;
   }
+  .nuevo-helado {
+    padding: 30px 10px;
+  }
+  .nuevo-helado .titulo-nuevo {
+    font-size: 2.2em;
+  }
+  .nuevo-helado .descripcion-nuevo {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  .nuevo-helado .nuevo-contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .nuevo-helado .nuevo-contenedor .nuevo-card {
+    padding: 15px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .nuevo-helado .nuevo-contenedor .nuevo-card img {
+    height: 240px;
+  }
+  .nuevo-helado .nuevo-contenedor .nuevo-card .nombre-milshake {
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
   form.formulario h2 {
     font-size: 1.5rem;
   }
