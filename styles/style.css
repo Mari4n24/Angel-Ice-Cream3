@@ -686,6 +686,13 @@ body.catalogo {
     max-height: 500px;
     object-fit: cover;
   }
+  footer {
+    font-size: 0.85em;
+    padding: 8px 0;
+  }
+  footer .redes img {
+    width: 20px;
+  }
 }
 @media (max-width: 768px) {
   body {
@@ -737,6 +744,32 @@ body.catalogo {
   .frase-principal, .frase-secundaria {
     font-size: 2em;
     text-align: center;
+  }
+  .nuevo-helado {
+    padding: 30px 15px;
+  }
+  .nuevo-helado .titulo-nuevo {
+    font-size: 3em;
+  }
+  .nuevo-helado .descripcion-nuevo {
+    font-size: 2em;
+    margin-bottom: 30px;
+  }
+  .nuevo-helado .nuevo-contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+  }
+  .nuevo-helado .nuevo-contenedor .nuevo-card {
+    max-width: 100%;
+    padding: 15px;
+  }
+  .nuevo-helado .nuevo-contenedor .nuevo-card img {
+    height: 300px;
+  }
+  .nuevo-helado .nuevo-contenedor .nuevo-card .nombre-milshake {
+    font-size: 1.2em;
+    margin-top: 10px;
   }
   form.formulario h2 {
     font-size: 60px;
