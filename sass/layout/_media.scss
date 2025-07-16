@@ -116,19 +116,19 @@
             height: auto;
             display: block;
         }
-        h2, h3 {
+        h2, h3{
             word-break: break-word;
             text-align: center;
             font-size: 1rem;
             font-weight: bold;
         }
-        p {
+        p{
             word-break: break-word;
             text-align: justify;
             font-size: 1rem;        
         }
     }    
-    .info-sucursal {
+    .info-sucursal{
         padding-left: 16px;
         padding-right: 16px;
     }
@@ -141,39 +141,38 @@
             object-fit: cover;
         }
     }
-    footer {
+    footer{
         font-size: 0.85em;
         padding: 8px 0;
-
-        .redes img {
+        .redes img{
             width: 20px;
         }
     }
 }
 
 @include respond-sm{
-    body {
+    body{
         padding-top: 90px; 
     }
-    header {
+    header{
         min-height: 70px;
         padding: 8px 16px;
     }
-    .navbar {
-        .navbar-brand {
-            img {
+    .navbar{
+        .navbar-brand{
+            img{
                 width: 32px !important;
                 height: 32px !important;
             }
-            span {
-            display: block;
-            margin: 0 auto;
-            text-align: center;    
-            font-size: 1.5rem !important;
-            max-width: 220px;
+            span{
+                display: block;
+                margin: 0 auto;
+                text-align: center;    
+                font-size: 1.5rem !important;
+                max-width: 220px;
             }
         }
-        .navbar-toggler {
+        .navbar-toggler{
             font-size: 1.4rem;
             padding: 6px;
         }
@@ -224,7 +223,7 @@
                 img{
                     height: 300px;
                 }
-                .nombre-milshake {
+                .nombre-milshake{
                     font-size: 1.2em;
                     margin-top: 10px;
                 }

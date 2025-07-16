@@ -1,17 +1,17 @@
 @import "../base/variables";
 @import "../base/mixins";
 
-.sabores {
+.sabores{
     text-align: center;
     font-size: 2em;
-    &-title {
+    &-title{
         text-align: center;
         color: $rosa-principal;
         font-family: $fuente-cursiva;
         font-size: 4.5rem;
     } 
-    &-lista {
-        p {
+    &-lista{
+        p{
         margin: 0;
         font-size: 18px;
         font-family: $fuente-normal;
@@ -19,7 +19,7 @@
     }
 }
 .helado {
-    section {
+    section{
         margin: 30px auto;
         max-width: 800px;
         padding: 20px;
@@ -29,14 +29,14 @@
         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
     }
 }
-article {
+article{
     margin: 10px 0;
     padding: 10px;
     border-left: 4px solid #C14649;
     border-radius: 10px;
     font-weight: 700;
 }
-.categoria {
+.categoria{
     display: block;
     margin-left: auto;
     margin-right: auto;
