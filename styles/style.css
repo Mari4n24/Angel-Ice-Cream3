@@ -19,7 +19,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
 body.fondo-fijo {
-  background-image: url(../assets/imagenes/fondo.jpg);
+  background-image: url(../assets/imagenes/fondofijo.jpeg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -47,7 +47,7 @@ body {
 }
 
 header .navbar {
-  background-image: url(../assets/imagenes/fondo.jpg);
+  background-image: url(../assets/imagenes/fondofijo.jpeg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -147,7 +147,7 @@ footer .redes img:hover {
 }
 
 .home {
-  background-image: url(../assets/imagenes/fondo.jpg);
+  background-image: url(../assets/imagenes/fondofijo.jpeg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -405,7 +405,7 @@ article {
 }
 
 .info-sucursal .fondo-fijo {
-  background-image: url(../assets/imagenes/fondo.jpg);
+  background-image: url(../assets/imagenes/fondofijo.jpeg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
