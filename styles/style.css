@@ -622,10 +622,10 @@ body.catalogo {
     padding: 30px 10px;
   }
   .nuevo-helado .titulo-nuevo {
-    font-size: 2.2em;
+    font-size: 3.2em !important;
   }
   .nuevo-helado .descripcion-nuevo {
-    font-size: 1.5em;
+    font-size: 2em !important;
     margin-bottom: 20px;
   }
   .nuevo-helado .nuevo-contenedor {
