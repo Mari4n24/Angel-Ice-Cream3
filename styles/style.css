@@ -681,6 +681,7 @@ body.catalogo {
     word-break: break-word;
     text-align: justify;
     font-size: 1rem;
+    font-weight: 500;
   }
   .info-sucursal {
     padding-left: 16px;
