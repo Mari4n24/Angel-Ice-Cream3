@@ -1,9 +1,9 @@
 @import "../base/variables";
 @import "../base/mixins";
+@import "../base/extends";
 
 .home{
-    background: url(../assets/Imagenes/fondofijo.jpeg) no-repeat center center fixed;
-    background-size: cover;
+    @extend %fondo;
     z-index: 1;
 }
 .frase-video{
