@@ -1,4 +1,5 @@
 @import "../base/variables";
+@import "../base/extends";
 
 .info-sucursal{
     padding-top: 100px;
@@ -13,11 +14,7 @@
     max-width: 600px;
     gap: 10px;
     .fondo-fijo{
-        background-image: url(../assets/Imagenes/fondofijo.jpg);
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
+        @extend %fondo;
     }
     h2{
         color: $rosa-principal;

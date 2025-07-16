@@ -17,6 +17,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
 body.fondo-fijo {
   background-image: url(../assets/Imagenes/fondofijo.jpeg);
   background-position: center center;
@@ -403,6 +404,14 @@ article {
   height: 200px;
 }
 
+.info-sucursal .fondo-fijo {
+  background-image: url(../assets/Imagenes/fondofijo.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 .info-sucursal {
   padding-top: 100px;
   text-align: center;
@@ -415,13 +424,6 @@ article {
   width: 90%;
   max-width: 600px;
   gap: 10px;
-}
-.info-sucursal .fondo-fijo {
-  background-image: url(../assets/Imagenes/fondofijo.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
 }
 .info-sucursal h2 {
   color: #C14649;
